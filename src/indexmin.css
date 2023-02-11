@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+@media screen and (max-width: 900px){
+
+  nav section .logo{
+    display: 
+    none;
+  }
+  input, textarea, button, select,a{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  nav{
+    z-index: 10;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    margin-top: 170px;
+    width: 95%;
+    height: 100%;
+    z-index: -1;
+    align-items: flex-end;
+   
+  }
+  nav ul li{
+  width: 50%;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  nav ul li a{
+    color: #F2474F;
+    position: relative;
+    right: 0;
+
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height: 100%;
+  }
+  nav ul li .active{
+    background:none;
+  }
+  nav .menu-btn{
+    display: flex;
+    color: red;
+    font-size: 30px;
+  }
+  nav button{
+    height: auto;
+    width: 30px;
+    margin-right: 25px;
+    display: grid;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #home {
+    background:linear-gradient(to top, rgba(0,0,0,0.95),rgba(0,0,0,0.9)),url('./images/background.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .back .content h3{
+    font-size: 17px;
+  }
+  .back .content h1{
+    font-size: 46px;
+  }
+  .back .content h1 span{
+    font-size: 25px;
+  }
+  .about{
+    height: 100vh;
+    position: relative;
+  }
+  .about h1{
+    padding: 50px 0 0 0;
+  }
+  .about .sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 800px;
+    width: 100vw;
+  } 
+  .about .sec img{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left:15%;
+    right: 55px;
+    border-radius: 150px;
+    top: 0px;
+    text-align: center;
+  }
+  .about .sec .para{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 210px;
+    padding: 100px 30px 0px 30px;
+  }
+  .about .sec .para p{
+    font-size: 19px;
+    line-height: 150%;
+    letter-spacing: 2px;
+  }
+  .about .sec .para a button:hover{
+    background-color: #fff;
+    color: #F2474F;
+    border: 2px solid #F2474F;
+  }
+  .projects{
+    padding: 10% 0;
+    display: flex;
+    /* margin-top: 14%; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects .cards .card{
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+  }
+  .projects .cards .card:hover{
+    /* scale: 1.02; */
+    transform: translateY(0px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+
+  /* skills */
+
+  .skills  .skill .progress, .skills .tools .tool .progress{
+    width: 100%;
+  }
+  .skills p{
+    width: 100%;
+    padding: 2% 0;
+  }
+  .skills{
+    margin: 15% 0 25% 0;
+    height: auto;
+    text-align: center;
+  }
+  .skills h3{
+    font-size: 20px;
+    margin: 5% 0;
+  }
+  .skills p{
+    font-size: 18px;
+  }
+  .head{
+    justify-content: center;
+  }
+  .head div{
+    display: none;
+  }
+  .skills  .skill .progress, .skills .tools .tool .progress{
+    height: 13px;
+  }
+
+  /* contact css */
+
+  .whole{
+    flex-direction: column;
+  }
+  .contact .whole .for form{
+    justify-content: center;
+  }
+  .contact .whole .info, .contact .whole .for{
+    width: 100%;
+  }
+  .contact button{
+    background-color: #F2474F;
+    border: none;
+    width: 100px;
+    height: 35px;
+    margin: 5% 0 ;
+  }
+  .contact .whole .for h3{
+    font-size: 20px;
+    padding:4% 0;
+  }
+  .contact label{
+    font-size: 14px;
+  }
+  .contact textarea, .contact input{
+    font-size: 13px;
+  }
+  .contact textarea{
+    width: 100%;
+  }
+  .contact .whole .for{
+    border-radius: 10px 10px  0 0;
+  }
+  .contact .whole .info{
+    border-radius: 0 0 10px 10px;
+  }
+  .contact .whole .info h3{
+    font-size: 18px;
+  }
+  .contact .whole .info .in p{
+    font-size: 13px;
+  }
+  
+  /* fooder */
+  .fooder{
+    padding: 1.5% 3% 2.5% 2%;
+  }
+  .fooder .fi{
+    gap: 5px;
+  }
+  .fooder .fi h1{
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .fooder .fi .logo{
+    gap: 0px; 
+  }
+  .fooder .fi .logo .bor iconify-icon{
+    font-size: 10px;
+    gap: 0;
+  }
+  .se h2{
+    font-size: 11px;
+    text-align: center;
+  }
+  .se h2 span{
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .th ul {
+    gap: 0px;
+  }
+  .th ul li a{
+    font-size: 9px;
+    }
+    .backtotop{
+      height: 45px;
+      width: 45px;
+      right: 6%;
+      bottom: 4%;
+    }
+    .contact .whole .for form button{
+      margin: 0;
+    }
+    .back .content .explore:hover{
+      color: #F2474F;
+      background: transparent;
+      border: 1px solid #F2474F;
+    }
+    .views{
+      gap: 0px;
+    }
+    .views p{
+      font-size: 16px;
+    }
+    .views h1{
+      font-size: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) , screen and (max-height: 400px){
+  .projects{
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) , screen and (max-height: 380px){
+  .tags{
+    width: 80%;
+  }
+}
