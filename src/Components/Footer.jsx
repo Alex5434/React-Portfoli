@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react'
 import React from 'react'
 
 const Footer = () => {
@@ -11,22 +12,22 @@ const Footer = () => {
 
         <a href="https://twitter.com/Alexand06656824">
         <div class="bor">
-          <iconify-icon class="ico" icon="mdi:twitter"></iconify-icon>
+          <Icon class="ico" icon="mdi:twitter"/>
         </div>
         </a>
         <a href="https://www.linkedin.com/in/alexander-e-005a16202/">
         <div class="bor">
-          <iconify-icon class="ico" icon="akar-icons:linkedin-fill"></iconify-icon>
+          <Icon class="ico" icon="akar-icons:linkedin-fill"/>
         </div>
         </a>
         <a href="https://github.com/Alex5434">
         <div class="bor">
-          <iconify-icon class="ico git" icon="bxl:github"></iconify-icon>
+          <Icon class="ico git" icon="bxl:github"/>
         </div>
         </a>
         <a href="https://www.instagram.com/alex_54349/">
         <div class="bor">
-          <iconify-icon class="ico" icon="akar-icons:instagram-fill"></iconify-icon>
+          <Icon class="ico" icon="akar-icons:instagram-fill"/>
         </div>
       </a>
       </div>

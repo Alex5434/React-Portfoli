@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import img from '../images/logo-removebg-preview.png'
 import { Icon } from '@iconify/react';
 
@@ -7,21 +7,19 @@ const Nav = () => {
     let navbar = document.querySelector("nav");
     let home = document.querySelector(".back")
 
-    const HandleToggle = () => {
-        // menu.classList.toggle("active");
-        // if(menu.classList.contains('active')){
-        //   list.style.display = "flex"
-        // }
-        // else{
-        //   list.style.display = "none"
-        // }
-      }
-      //Navbar transparent on scroll
+      useEffect(() => {
+        console.log("ih");
+      }, window.scrollY)
+
     window.addEventListener("scroll", ()=> {
         var scrollTop =window.scrollY;
         let height = home.offsetHeight;
         height-scrollTop<60?navbar.classList.add("act"):navbar.classList.remove("act");
     })
+
+    const HandleToggle = ()=>{
+      
+    }
       
 
       return (
@@ -69,7 +67,7 @@ const Nav = () => {
       </li>
     </ul>
     <button className="men-btn" onClick={HandleToggle}>
-    <iconify-icon className="menu-btn" icon="bytesize:menu"></iconify-icon>
+    <Icon className="menu-btn" icon="bytesize:menu" />
   </button>
     </nav>
   )
