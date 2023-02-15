@@ -1,32 +1,38 @@
-import {React,useEffect} from 'react'
+import {React} from 'react'
 import img from '../images/logo-removebg-preview.png'
 import { Icon } from '@iconify/react';
+import Home from './Home'
 
 const Nav = () => {
 
     let navbar = document.querySelector("nav");
-    let home = document.querySelector(".back")
+    let home = document.getElementById("home");
+    let menu = document.querySelector(".men-btn");
+    let list = document.querySelector(".list");
 
-      useEffect(() => {
-        console.log("ih");
-      }, window.scrollY)
-
+    console.log(navbar);
     window.addEventListener("scroll", ()=> {
         var scrollTop =window.scrollY;
-        let height = home.offsetHeight;
-        height-scrollTop<60?navbar.classList.add("act"):navbar.classList.remove("act");
+        var heigh = home.scrollHeight;
+        console.log(scrollTop);
+        heigh-scrollTop<60?navbar.classList.add("act"):navbar.classList.remove("act");
     })
-
-    const HandleToggle = ()=>{
-      
+    const HandleToggle = () => {
+      // menu.classList.toggle("active");
+      menu.classList.toggle("acive")
+      if(menu.classList.contains('active')){
+        list.style.display = "flex"
+      }
+      else{
+        list.style.display = "none"
+      }
     }
-      
 
       return (
     <nav>
         <section>
     <img src={img} alt="logo"/>
-    <div className="logo">
+    <div className="logo"> 
       <div className="bor">
         <a href="https://twitter.com/Alexand06656824">
           <Icon className='ico' icon="mdi:twitter"/>
